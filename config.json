@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "notionMCP": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.notion.com/mcp"
+      ]
+    },
+    "n8n": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://jayef.app.n8n.cloud/mcp/vector-datatobiz"
+      ]
+    }
+  }
+}
