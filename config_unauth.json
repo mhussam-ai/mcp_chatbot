@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "n8n": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://jayef.app.n8n.cloud/mcp/vector-datatobiz"
+      ]
+    }
+  }
+}
