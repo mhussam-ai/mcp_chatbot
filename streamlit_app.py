@@ -19,9 +19,22 @@ st.set_page_config(
 )
 st.title("🤖 MCP Knowledge Retrieval Chatbot")
 
+# --- Sidebar with Command Buttons ---
+with st.sidebar:
+    st.header("API Key Configuration")
+    api_key = st.text_input("Enter your Google API Key", type="password")
+    if api_key:
+        st.session_state.google_api_key = api_key
+        st.success("API Key set!")
+    else:
+        st.warning("Please enter your Google API Key to use the chatbot.")
+
 # --- Initialization ---
-if "agent" not in st.session_state:
+if "agent" not in st.session_state and st.session_state.get("google_api_key"):
     initialize_session_state()
+elif not st.session_state.get("google_api_key"):
+    st.info("Please enter your Google API Key in the sidebar to start the chatbot.")
+    st.stop()
 
 # --- Sidebar with Command Buttons ---
 with st.sidebar:

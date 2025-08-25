@@ -27,15 +27,18 @@ def initialize_session_state():
     This function is called only once per session.
     """
     with st.spinner("Initializing Agent... Please wait."):
-        # Use Streamlit secrets for deployment, with a .env fallback for local dev
-        try:
-            GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
-        except (FileNotFoundError, KeyError):
-            load_dotenv()
-            GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+        # Prioritize API key from sidebar, then Streamlit secrets, then .env
+        GOOGLE_API_KEY = st.session_state.get("openai_api_key")
 
         if not GOOGLE_API_KEY:
-            st.error("Google API Key not found. Please set it in Streamlit secrets or a .env file.")
+            try:
+                GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+            except (FileNotFoundError, KeyError):
+                load_dotenv()
+                GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+
+        if not GOOGLE_API_KEY:
+            st.error("Google API Key not found. Please enter it in the sidebar, set it in Streamlit secrets, or a .env file.")
             st.stop()
 
         config_file = "config.json"
