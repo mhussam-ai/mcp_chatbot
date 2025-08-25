@@ -1,0 +1,7 @@
+# packages.txt
+
+# Installs the Node.js runtime
+nodejs
+
+# Installs the Node Package Manager, which includes npx
+npm
