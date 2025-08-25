@@ -1,8 +1,10 @@
 # app.py
 import streamlit as st
 import asyncio
+import os
+from dotenv import load_dotenv
 from agent_handler import (
-    initialize_session_state, 
+    initialize_agent_with_key, 
     get_agent_response, 
     close_agent_sessions
 )
@@ -19,37 +21,55 @@ st.set_page_config(
 )
 st.title("🤖 MCP Knowledge Retrieval Chatbot")
 
-# --- Sidebar with Command Buttons ---
+# --- Sidebar for API Key and Commands ---
 with st.sidebar:
-    st.header("API Key Configuration")
-    api_key = st.text_input("Enter your Google API Key", type="password")
-    if api_key:
-        st.session_state.google_api_key = api_key
-        st.success("API Key set!")
+    st.header("Configuration")
+    # Using type="password" hides the key as the user types it
+    sidebar_api_key = st.text_input(
+        "Your Google API Key",
+        type="password",
+        placeholder="Enter your key and press Enter",
+        help="Get your API key from Google AI Studio."
+    )
+    
+    # Check for key from all sources and store in session_state
+    if sidebar_api_key:
+        st.session_state.google_api_key = sidebar_api_key
     else:
-        st.warning("Please enter your Google API Key to use the chatbot.")
+        # Try to load from secrets if not entered in sidebar
+        try:
+            st.session_state.google_api_key = st.secrets["GOOGLE_API_KEY"]
+        except (KeyError, FileNotFoundError):
+            # Fallback to .env for local development
+            load_dotenv()
+            st.session_state.google_api_key = os.getenv("GOOGLE_API_KEY")
 
-# --- Initialization ---
-if "agent" not in st.session_state and st.session_state.get("google_api_key"):
-    initialize_session_state()
-elif not st.session_state.get("google_api_key"):
-    st.info("Please enter your Google API Key in the sidebar to start the chatbot.")
-    st.stop()
-
-# --- Sidebar with Command Buttons ---
-with st.sidebar:
     st.header("Commands")
-    if st.button("Clear Chat History", use_container_width=True):
+    # Buttons are disabled until the agent is ready
+    agent_ready = "agent" in st.session_state
+    if st.button("Clear Chat History", use_container_width=True, disabled=not agent_ready):
         st.session_state.agent.clear_conversation_history()
         st.session_state.messages = [{"role": "assistant", "content": "History cleared. How can I help you?"}]
         st.rerun()
 
-    if st.button("End Session and Exit", use_container_width=True, type="primary"):
+    if st.button("End Session and Exit", use_container_width=True, type="primary", disabled=not agent_ready):
         with st.spinner("Closing all sessions..."):
             run_async(close_agent_sessions(st.session_state.agent), st.session_state.loop)
-        st.info("Conversation ended and all sessions closed. Refresh the page to start over.")
+        st.info("Conversation ended. Refresh to start over.")
         st.stop()
 
+# --- Main Application Logic ---
+
+# 1. Check if we have a key. If not, stop and wait for user input.
+if not st.session_state.get("google_api_key"):
+    st.info("Please enter your Google API Key in the sidebar to start the chat.")
+    st.stop()
+
+# 2. If we have a key but the agent isn't initialized, initialize it now.
+if "agent" not in st.session_state:
+    initialize_agent_with_key(st.session_state.google_api_key)
+
+# 3. If we reach here, the agent is initialized and ready. Display the chat interface.
 # --- Chat History Display ---
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
@@ -70,11 +90,6 @@ if prompt := st.chat_input("Ask about your project needs..."):
                 )
                 st.markdown(response)
                 st.session_state.messages.append({"role": "assistant", "content": response})
-
-            except ConnectionError as e:
-                error_msg = f"Connection Error: I couldn't connect to a knowledge base. Please check the server. Details: {e}"
-                st.error(error_msg)
-                st.session_state.messages.append({"role": "assistant", "content": error_msg})
             except Exception as e:
                 error_msg = f"An unexpected error occurred: {e}"
                 st.error(error_msg)

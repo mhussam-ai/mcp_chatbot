@@ -1,12 +1,10 @@
 # agent_handler.py
 import streamlit as st
-import os
 import asyncio
-from dotenv import load_dotenv
 
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from mcp_use import MCPAgent, MCPClient
-from prompts import AGENT_SYSTEM_PROMPT # Import from our new prompts file
+from prompts import AGENT_SYSTEM_PROMPT
 import nest_asyncio
 
 nest_asyncio.apply()
@@ -21,29 +19,19 @@ def get_mcp_client(config_file: str):
     """Returns a cached instance of the MCPClient."""
     return MCPClient.from_config_file(config_file)
 
-def initialize_session_state():
+def initialize_agent_with_key(api_key: str):
     """
-    Initializes the agent, its dependencies, and stores them in the session state.
-    This function is called only once per session.
+    Initializes the agent with a provided API key and stores it in session state.
     """
     with st.spinner("Initializing Agent... Please wait."):
-        # Prioritize API key from sidebar, then Streamlit secrets, then .env
-        GOOGLE_API_KEY = st.session_state.get("openai_api_key")
-
-        if not GOOGLE_API_KEY:
-            try:
-                GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
-            except (FileNotFoundError, KeyError):
-                load_dotenv()
-                GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
-
-        if not GOOGLE_API_KEY:
-            st.error("Google API Key not found. Please enter it in the sidebar, set it in Streamlit secrets, or a .env file.")
+        if not api_key:
+            st.error("The provided API Key is empty. Cannot initialize agent.")
             st.stop()
 
         config_file = "config.json"
         
-        llm = get_llm(GOOGLE_API_KEY)
+        # Use the provided key to get the LLM and Client
+        llm = get_llm(api_key)
         client = get_mcp_client(config_file)
         
         agent = MCPAgent(
@@ -51,12 +39,13 @@ def initialize_session_state():
             client=client,
             memory_enabled=True,
             max_steps=20,
-            system_prompt=AGENT_SYSTEM_PROMPT # Use the imported prompt
+            system_prompt=AGENT_SYSTEM_PROMPT
         )
         
+        # Store the initialized agent and other session variables
         st.session_state.agent = agent
         st.session_state.loop = asyncio.get_event_loop()
-        st.session_state.messages = [{"role": "assistant", "content": "How can I help you today?"}]
+        st.session_state.messages = [{"role": "assistant", "content": "API Key accepted. How can I help you today?"}]
 
 async def get_agent_response(agent: MCPAgent, user_prompt: str) -> str:
     """Asynchronously runs the agent and returns the complete response."""
