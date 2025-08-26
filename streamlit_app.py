@@ -67,7 +67,8 @@ if not st.session_state.get("google_api_key"):
 
 # 2. If we have a key but the agent isn't initialized, initialize it now.
 if "agent" not in st.session_state:
-    initialize_agent_with_key(st.session_state.google_api_key)
+    api_key: str = str(st.session_state.google_api_key)
+    initialize_agent_with_key(api_key)
 
 # 3. If we reach here, the agent is initialized and ready. Display the chat interface.
 # --- Chat History Display ---

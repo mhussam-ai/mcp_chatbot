@@ -1,3 +1,10 @@
+# Required for fetching NodeSource setup script
 curl
 gnupg
 ca-certificates
+ 
+# Add NodeSource repo for Node.js 18 and install Node.js + npm
+# Streamlit Cloud executes packages.txt line by line
+# So we can inline commands
+curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+apt-get install -y nodejs npm
