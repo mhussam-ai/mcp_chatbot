@@ -1,0 +1,1204 @@
+[06:36:55] 🐍 Python dependencies were installed from /mount/src/mcp_chatbot/requirements.txt using uv.
+
+Check if streamlit is installed
+
+Streamlit is already installed
+
+[06:36:57] 📦 Processed dependencies!
+
+
+
+
+2025-08-26 06:37:08.348 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:37:13.838 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:37:13.840 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:38:05,938 - mcp_use.telemetry.telemetry - INFO - Anonymized telemetry enabled. Set MCP_USE_ANONYMIZED_TELEMETRY=false to disable.
+
+2025-08-26 06:38:33,452 - mcp_use - INFO - 🚀 Initializing MCP agent and connecting to services...
+
+2025-08-26 06:38:33,452 - mcp_use - INFO - 🔌 Found 0 existing sessions
+
+2025-08-26 06:38:33,452 - mcp_use - INFO - 🔄 No active sessions found, creating new ones...
+
+npm[2025-08-26 06:38:35.355798]  WARN EBADENGINE Unsupported engine {
+
+npm WARN EBADENGINE   package: 'open@10.2.0',
+
+npm WARN EBADENGINE   required: { node: '>=18' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE }
+
+npm WARN [2025-08-26 06:38:35.357463] EBADENGINE Unsupported engine {
+
+npm WARN EBADENGINE   package: 'default-browser@5.2.1',
+
+npm WARN EBADENGINE   required: { node: '>=18' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN [2025-08-26 06:38:35.357648] EBADENGINE }
+
+npm WARN EBADENGINE Unsupported engine {
+
+npm WARN EBADENGINE   package: 'is-inside-container@1.0.0',
+
+npm [2025-08-26 06:38:35.357989] WARN EBADENGINE   required: { node: '>=14.16' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE }
+
+npm WARN EBADENGINE Unsupported engine {
+
+npm WARN EBADENGINE   package: 'wsl-utils@0.1.0',
+
+npm WARN EBADENGINE[2025-08-26 06:38:35.358409]    required: { node: '>=18' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE }
+
+npm WARN EBADENGINE Unsupported engine {
+
+npm WARN EBADENGINE   package: 'bundle-name@4.1.0',
+
+npm WARN EBADENGINE   required: { node: '>=18' },
+
+npm [2025-08-26 06:38:35.358792] WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE }
+
+npm WARN EBADENGINE[2025-08-26 06:38:35.359596]  Unsupported engine {
+
+npm WARN EBADENGINE   package: 'default-browser-id@5.0.0',
+
+npm WARN EBADENGINE   required: { node: '>=18' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE }
+
+npm WARN EBADENGINE Unsupported engine {
+
+npm [2025-08-26 06:38:35.360042] WARN EBADENGINE   package: 'run-applescript@7.0.0',
+
+npm WARN EBADENGINE   required: { node: '>=18' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN EBADENGINE[2025-08-26 06:38:35.360382]  }
+
+npm WARN EBADENGINE[2025-08-26 06:38:35.361067]  Unsupported engine {
+
+npm WARN EBADENGINE   package: 'is-wsl@3.1.0',
+
+npm WARN EBADENGINE   required: { node: '>=16' },
+
+npm WARN EBADENGINE   current: { node: 'v12.22.12', npm: '7.5.2' }
+
+npm WARN[2025-08-26 06:38:35.361287]  EBADENGINE }
+
+file:///home/appuser/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-OXNXVROF.js:11847
+
+crypto = globalThis.crypto?.webcrypto ?? // Node.js [18-16] REPL
+
+                           ^
+
+
+SyntaxError: Unexpected token '.'
+
+    at Loader.moduleStrategy (internal/modules/esm/translators.js:133:18)
+
+npm[2025-08-26 06:38:37.190078]  ERR! code 1
+
+npm ERR! path /mount/src/mcp_chatbot
+
+npm ERR! command failed
+
+npm ERR! command sh -c mcp-remote "https://jayef.app.n8n.cloud/mcp/vector-datatobiz"
+
+
+npm[2025-08-26 06:38:37.210919]  [2025-08-26 06:38:37.211322] ERR![2025-08-26 06:38:37.211711]  A complete log of this run can be found in:
+
+npm[2025-08-26 06:38:37.212575]  [2025-08-26 06:38:37.212978] ERR![2025-08-26 06:38:37.213400]      /home/appuser/.npm/_logs/2025-08-26T06_38_37_196Z-debug.log
+
+2025-08-26 06:38:37,256 - mcp_use - ERROR - ❌ Error running query: Connection closed
+
+2025-08-26 06:38:37,256 - mcp_use - ERROR - ❌ Error during agent execution: Connection closed
+
+2025-08-26 06:39:00.548 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:39:01.697 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:39:01.699 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 185, in __init__
+
+    self._add_dir_watch(path, event_mask, recursive=recursive)
+
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 404, in _add_dir_watch
+
+    self._add_watch(path, mask)
+
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 424, in _add_watch
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 435, in _raise_error
+
+    raise OSError(errno.ENOSPC, "inotify watch limit reached")
+
+OSError: [Errno 28] inotify watch limit reached
+
+2025-08-26 06:39:23,416 - mcp_use - INFO - 🚀 Initializing MCP agent and connecting to services...
+
+2025-08-26 06:39:23,416 - mcp_use - INFO - 🔌 Found 0 existing sessions
+
+2025-08-26 06:39:23,416 - mcp_use - INFO - 🔄 No active sessions found, creating new ones...
+
+file:///home/appuser/.npm/_npx/705d23756ff7dacc/node_modules/mcp-remote/dist/chunk-OXNXVROF.js:11847
+
+crypto = globalThis.crypto?.webcrypto ?? // Node.js [18-16] REPL
+
+                           ^
+
+
+SyntaxError: Unexpected token '.'
+
+    at Loader.moduleStrategy (internal/modules/esm/translators.js:133:18)
+
+npm[2025-08-26 06:39:24.248908]  ERR! code 1
+
+npm [2025-08-26 06:39:24.249222] ERR! path /mount/src/mcp_chatbot
+
+npm ERR! command failed
+
+npm ERR! command sh -c mcp-remote "https://jayef.app.n8n.cloud/mcp/vector-datatobiz"
+
+
+npm[2025-08-26 06:39:24.280039]  ERR! A complete log of this run can be found in:
+
+npm ERR!     /home/appuser/.npm/_logs/2025-08-26T06_39_24_254Z-debug.log
+
+2025-08-26 06:39:24,289 - mcp_use - ERROR - ❌ Error running query: Connection closed
+
+2025-08-26 06:39:24,289 - mcp_use - ERROR - ❌ Error during agent execution: Connection closed
+
+2025-08-26 06:39:55.566 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:39:56.077 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:39:56.080 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:44:55.507 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:44:55.981 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:44:55.983 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:49:55.516 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:49:56.004 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:49:56.006 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:54:55.492 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:54:55.992 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached
+
+2025-08-26 06:54:55.993 Failed to schedule watch observer for path /mount/src/mcp_chatbot
+
+Traceback (most recent call last):
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/streamlit/watcher/event_based_path_watcher.py", line 186, in watch_path
+
+    folder_handler.watch = self._observer.schedule(
+
+                           ~~~~~~~~~~~~~~~~~~~~~~~^
+
+        folder_handler, folder_path, recursive=True
+
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+    )
+
+    ^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/api.py", line 312, in schedule
+
+    emitter.start()
+
+    ~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/utils/__init__.py", line 75, in start
+
+    self.on_thread_start()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify.py", line 119, in on_thread_start
+
+    self._inotify = InotifyBuffer(path, recursive=self.watch.is_recursive, event_mask=event_mask)
+
+                    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_buffer.py", line 30, in __init__
+
+    self._inotify = Inotify(path, recursive=recursive, event_mask=event_mask)
+
+                    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 149, in __init__
+
+    Inotify._raise_error()
+
+    ~~~~~~~~~~~~~~~~~~~~^^
+
+  File "/home/adminuser/venv/lib/python3.13/site-packages/watchdog/observers/inotify_c.py", line 438, in _raise_error
+
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+
+OSError: [Errno 24] inotify instance limit reached

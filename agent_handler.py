@@ -28,7 +28,7 @@ def initialize_agent_with_key(api_key: str):
             st.error("The provided API Key is empty. Cannot initialize agent.")
             st.stop()
 
-        config_file = "config_unauth.json"
+        config_file = "config.json"
         
         # Use the provided key to get the LLM and Client
         llm = get_llm(api_key)

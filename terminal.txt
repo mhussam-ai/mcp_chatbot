@@ -1,0 +1,375 @@
+
+2025-08-26 12:20:14,318 - mcp_use.telemetry.telemetry - INFO - Anonymized telemetry enabled. Set MCP_USE_ANONYMIZED_TELEMETRY=false to disable.
+2025-08-26 12:21:44,544 - mcp_use - INFO - 🚀 Initializing MCP agent and connecting to services...
+2025-08-26 12:21:44,545 - mcp_use - INFO - 🔌 Found 0 existing sessions
+2025-08-26 12:21:44,546 - mcp_use - INFO - 🔄 No active sessions found, creating new ones...
+2025-08-26 12:22:03,541 - mcp_use - INFO - ✅ Created 2 new sessions
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+Exception ignored in: <function Task.__del__ at 0x000002825582EF20>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\tasks.py", line 138, in __del__
+    self._loop.call_exception_handler(context)
+AttributeError: 'NoneType' object has no attribute 'call_exception_handler'
+Exception ignored in: <function BaseEventLoop.__del__ at 0x0000028255868180>
+Traceback (most recent call last):
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 758, in __del__
+    if not self.is_closed():
+  File "C:\Program Files\Python313\Lib\asyncio\base_events.py", line 755, in is_closed
+    return self._closed
+AttributeError: '_WindowsSelectorEventLoop' object has no attribute '_closed'
+2025-08-26 12:22:06,769 - mcp_use - INFO - 🛠️ Created 15 LangChain tools from client
+2025-08-26 12:22:06,769 - mcp_use - INFO - 🧰 Found 15 tools across all connectors
+2025-08-26 12:22:06,770 - mcp_use - INFO - 🧠 Agent ready with tools: search, fetch, notion-create-pages, notion-update-page, notion-move-pages, notion-duplicate-page, notion-create-database, notion-update-database, notion-create-comment, notion-get-comments, notion-get-users, notion-get-self, notion-get-user, enhanced_markdown_specification, gdrive
+2025-08-26 12:22:06,888 - mcp_use - INFO - ✨ Agent initialization complete
+2025-08-26 12:22:06,889 - mcp_use - INFO - 💬 Received query: 'Hey Man'
+2025-08-26 12:22:06,889 - mcp_use - INFO - 🏁 Starting agent execution with max_steps=20
+2025-08-26 12:22:06,889 - mcp_use - INFO - 👣 Step 1/20
+2025-08-26 12:22:08,961 - mcp_use - INFO - ✅ Agent finished at step 1
+2025-08-26 12:22:08,961 - mcp_use - INFO - 🎉 Agent execution complete in 24.416959285736084 seconds
