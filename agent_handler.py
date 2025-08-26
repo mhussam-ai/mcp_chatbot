@@ -3,6 +3,7 @@ import streamlit as st
 import asyncio
 
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
+from pydantic import SecretStr
 from mcp_use import MCPAgent, MCPClient
 from prompts import AGENT_SYSTEM_PROMPT
 import nest_asyncio
@@ -12,7 +13,7 @@ nest_asyncio.apply()
 @st.cache_resource
 def get_llm(api_key: str):
     """Returns a cached instance of the ChatGoogleGenerativeAI model."""
-    return ChatGoogleGenerativeAI(model='gemini-2.5-flash', api_key=api_key)
+    return ChatGoogleGenerativeAI(model='gemini-2.5-flash', api_key=SecretStr(api_key))
 
 @st.cache_resource
 def get_mcp_client(config_file: str):

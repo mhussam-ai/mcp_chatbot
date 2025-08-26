@@ -1,5 +1,4 @@
 # app.py
-import subprocess
 import streamlit as st
 import asyncio
 import os
@@ -9,30 +8,6 @@ from agent_handler import (
     get_agent_response, 
     close_agent_sessions
 )
-
-# Run the check at startup
-def check_node_install():
-
-    try:
-
-        node_version = subprocess.check_output(["node", "-v"], text=True).strip()
-
-        npm_version = subprocess.check_output(["npm", "-v"], text=True).strip()
-
-        npx_version = subprocess.check_output(["npx", "--version"], text=True).strip()
- 
-        st.write(f"✅ Node.js version: {node_version}")
-
-        st.write(f"✅ npm version: {npm_version}")
-
-        st.write(f"✅ npx version: {npx_version}")
- 
-    except Exception as e:
-
-        st.error(f"⚠️ Node.js / npm / npx not found: {e}")
- 
-
-check_node_install()
 
 def run_async(coro, loop):
     """Helper function to run async code in Streamlit's sync environment."""
@@ -120,5 +95,3 @@ if prompt := st.chat_input("Ask about your project needs..."):
                 error_msg = f"An unexpected error occurred: {e}"
                 st.error(error_msg)
                 st.session_state.messages.append({"role": "assistant", "content": error_msg})
-
-
