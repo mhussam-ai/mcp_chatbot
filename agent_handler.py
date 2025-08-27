@@ -3,18 +3,19 @@ import streamlit as st
 import os
 import asyncio
 from dotenv import load_dotenv
-
+from pydantic import SecretStr
 from langchain_google_genai.chat_models import ChatGoogleGenerativeAI
 from mcp_use import MCPAgent, MCPClient
-from prompts import AGENT_SYSTEM_PROMPT # Import from our new prompts file
+from prompts import AGENT_SYSTEM_PROMPT
 import nest_asyncio
+import asyncio
 
 nest_asyncio.apply()
 
 @st.cache_resource
 def get_llm(api_key: str):
     """Returns a cached instance of the ChatGoogleGenerativeAI model."""
-    return ChatGoogleGenerativeAI(model='gemini-2.5-flash', api_key=api_key)
+    return ChatGoogleGenerativeAI(model='gemini-2.5-flash', api_key=SecretStr(api_key))
 
 @st.cache_resource
 def get_mcp_client(config_file: str):
@@ -53,14 +54,24 @@ def initialize_session_state():
         
         st.session_state.agent = agent
         st.session_state.loop = asyncio.get_event_loop()
+        st.session_state.cleanup_event = asyncio.Event()
+        st.session_state.cleanup_task = st.session_state.loop.create_task(
+            _run_cleanup_task(agent, st.session_state.cleanup_event)
+        )
         st.session_state.messages = [{"role": "assistant", "content": "How can I help you today?"}]
+
+async def _run_cleanup_task(agent: MCPAgent, cleanup_event: asyncio.Event):
+    """Long-running task to handle agent cleanup when the event is set."""
+    await cleanup_event.wait()
+    if agent and agent.client:
+        await agent.client.close_all_sessions()
 
 async def get_agent_response(agent: MCPAgent, user_prompt: str) -> str:
     """Asynchronously runs the agent and returns the complete response."""
     response = await agent.run(user_prompt)
     return response
 
-async def close_agent_sessions(agent: MCPAgent):
-    """Closes all active MCP sessions."""
-    if agent and agent.client:
-        await agent.client.close_all_sessions()
+async def close_agent_sessions(cleanup_event: asyncio.Event, cleanup_task: asyncio.Task):
+    """Triggers and awaits the cleanup task."""
+    cleanup_event.set()
+    await cleanup_task
